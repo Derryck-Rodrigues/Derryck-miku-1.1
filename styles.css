@@ -42,7 +42,7 @@ nav a:hover {
 
 /* Seção hero */
 .hero {
-    background-image: url('img/Hatsune1.png'); /* Substitua com uma imagem válida */
+    background-image: url('img/Hatsune1.gif'); /* Substitua com uma imagem válida */
     background-size: cover;
     background-position: center;
     height: 400px;
