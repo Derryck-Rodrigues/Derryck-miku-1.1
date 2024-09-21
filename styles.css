@@ -1,0 +1,205 @@
+/* Fonte Poppins */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000; /* Fundo preto */
+    color: #00C7D1; /* Texto em ciano */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #00C7D1; /* Ciano */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #CE0F0F; /* Preto */
+    font-size: 36px;
+    font-weight: 600;
+}
+
+/* Navegação */
+nav {
+    text-align: center;
+    background-color: #000; /* Preto */
+    padding: 15px;
+}
+
+nav a {
+    color: #D10000; /* Ciano */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #fff; /* Branco no hover */
+}
+
+/* Seção hero */
+.hero {
+    background-image: url('img/Hatsune1.png'); /* Substitua com uma imagem válida */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero h2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+/* Estilo das seções */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 30px;
+    color: #D10000;
+    position: relative;
+}
+
+section h2:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: #00CBD1;
+    margin: 10px auto;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 30%;
+    border-radius: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.gallery2 img {
+    width: 30%;
+    border-radius: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery2 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+.gallery3 img {
+ display: flex;
+ width: 100%;
+ justify-items: center
+}
+/* Estilo do formulário */
+form {
+    background-color: #000; /* Fundo preto */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #00C7D1; /* Ciano */
+}
+
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #D10000; /* Borda ciano */
+    border-radius: 10px;
+    background-color: #111; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+    font-size: 16px;
+}
+
+form input[type="email"]::placeholder,
+form textarea::placeholder {
+    color: #777; /* Placeholder cinza */
+}
+
+form input[type="email"]:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #007ea7; /* Cor de foco */
+}
+
+form button[type="submit"] {
+    background-color: #00C7D1;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+form button[type="submit"]:hover {
+    background-color: #007ea7; /* Cor do botão no hover */
+}
+
+/* Footer */
+footer {
+    background-color: #000; /* Preto */
+    color: #D10000; /* Ciano */
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Efeito fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
